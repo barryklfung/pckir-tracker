@@ -1,2 +1,2 @@
 # pckir-tracker
-Port of the EmoTracker from devonismyname and vicenthas (sp) to Vue.js
+Port of the EmoTracker from devonismyname and vicendithas to Vue.js for web use.
