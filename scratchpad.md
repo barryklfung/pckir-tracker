@@ -9,6 +9,16 @@ List of items and prereqs (including ability to reach locations)
 - An item check/task is then defined as one that generates a visible check box that toggles visibility of text.
 - Virtual checks include anything that simplifies a lot of checks for locations - (e.g. all  Team Rocket, have x badges, can use HM), that serves to simplify the graph. Utilise the ones that the crystal randomizer has. Key Items technically fit within this framework, haha.
 
+## TODO list:
+1. modify Task.vue to be a proper mixin (that will be inherited by check "item" and Town)
+2. figure out how mixin's and inheritance works for properties, cause that's sorta the key thing needed.
+3. Extend Check with visibility and template info
+  - Expected uniqueness - figure out toggleable visibility
+4. Extend Town (i.e. map) to have visibility and nesting of checks.
+  - Expected uniqueness - figure out nesting of checks
+5. Make new component Key Item that has permanent visibility as a task
+  - Expected uniqueness - maybe modify isCompleted? Figure that out.
+
 ## Implementation of datastructure.
 1. Create nodes for each check, and store prereqs
    * dictionary of IDs, probably?
@@ -33,3 +43,4 @@ List of items and prereqs (including ability to reach locations)
 - Uncheckable tasks grey
 - Checked tasks grey
 - Key items can be a checkbox list.
+
