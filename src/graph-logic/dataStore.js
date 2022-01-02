@@ -26,6 +26,12 @@ export const store = {
       else console.log("Attempted to access nodeArray out of index");
     }
   },
+
+  //parse JSON as object with single field "all_tasks" that is a list with fields:
+  //name: String;
+  //prerequisites: Array of Strings that is the same as before;
+  //Possibly Type?
+  //containing object (NULL for world level, then town level, probably).
   initializeStore(inputJSONpath) {
     resetState();
     const parsed = JSON.parse(inputJSONpath);
@@ -49,6 +55,7 @@ export const store = {
         )
       );
     }
+    state.numNodes = nodeArray.length; //Yes, this is dumb.
     //Populate dependnecies, and do the name to ID conversion.
     for (let i = 0; i < nodes.length; i++) {
       for (let j = 0; j < nodes[i].prerequisites.length; j++) {
