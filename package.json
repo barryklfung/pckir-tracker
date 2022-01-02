@@ -1,5 +1,5 @@
 {
-  "name": "vite-project",
+  "name": "pckir-tracker",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,6 +7,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "tiny-emitter": "^2.1.0",
     "vue": "^3.2.25"
   },
   "devDependencies": {
